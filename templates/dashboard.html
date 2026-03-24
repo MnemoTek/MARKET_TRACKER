@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Market Tracker</title>
+
+<meta http-equiv="refresh" content="10">
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<h1>Crypto Market</h1>
+
+<table>
+
+<tr>
+<th>Asset</th>
+<th>Price</th>
+<th>24h %</th>
+<th>Market Cap</th>
+<th>Volume</th>
+</tr>
+
+{% for c in crypto %}
+
+<tr>
+<td>{{c.name}}</td>
+<td>${{c.price}}</td>
+<td>{{c.change}}</td>
+<td>{{c.market_cap}}</td>
+<td>{{c.volume}}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+<h1>Forex Market</h1>
+
+<table>
+
+<tr>
+<th>Pair</th>
+<th>Rate</th>
+<th>Bid</th>
+<th>Ask</th>
+</tr>
+
+{% for f in forex %}
+
+<tr>
+<td>{{f.pair}}</td>
+<td>{{f.rate}}</td>
+<td>{{f.bid}}</td>
+<td>{{f.ask}}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+<h2>Bitcoin 24h Chart</h2>
+
+{{chart|safe}}
+
+</body>
+</html>

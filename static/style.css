@@ -1,0 +1,26 @@
+body{
+font-family: Arial;
+background:#0f172a;
+color:white;
+padding:40px;
+}
+
+table{
+border-collapse:collapse;
+width:80%;
+margin-bottom:40px;
+}
+
+th,td{
+padding:10px;
+border:1px solid #334155;
+text-align:center;
+}
+
+th{
+background:#1e293b;
+}
+
+tr:nth-child(even){
+background:#1e293b;
+}
