@@ -80,7 +80,27 @@ Flask App
 ↓  
 API Requests (CoinGecko / ExchangeRate)  
 ↓  
-Data Processing  
+Data Processing 
+STRUCTURE
+
+market_tracker
+│
+├── app.py
+├── api.py
+├── charts.py
+├── terminal.py
+│
+├── templates/
+│ └── dashboard.html
+│
+├── static/
+│ └── style.css
+│
+├── images/
+│
+├── README.md
+├── ARCHITECTURE.md
+└── requirements.txt
 ↓  
 Render Dashboard or Terminal Output
 
